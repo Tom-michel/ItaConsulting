@@ -57,7 +57,7 @@ img {
 
 /* =============== BOUTONS ======================= */
 
-.btn-ita {
+.btn-Itta {
     text-transform: uppercase;
     font-size: 13px;
     padding: 12px 60px;
@@ -90,7 +90,9 @@ img {
 
 #div-nav nav {
     border-top: var(--color-yellow) solid 1px;
-    background-color: var(--color-dark);
+    /* background-color: var(--color-dark); */
+    background-color: #292738d0;
+    backdrop-filter: blur(3px) !important;
 }
 @media screen and (min-width: 769px) {
     #div-nav nav {
@@ -367,11 +369,11 @@ img {
 .more:hover i{background-color: var(--color-yellow); transition: 0.5s;}
 
 .box .img-card img{
-    transition: 4s;
+    transition: 0.2s;
 }
 .box:hover img{
-    transform: scale(1.3);
-    transition: 2s;
+    transform: scale(1.7);
+    transition: 0.3s;
 }
 
 /* services fin */
@@ -446,6 +448,12 @@ img {
 
 }
 
+#about .text-about, #about .bg-about {width: 50%;}
+@media screen and (max-width: 700px) {
+    #about .text-about {width: 100%;}
+    #about .bg-about {width: 0%;}
+}
+
 #about .text-desc p {
     line-height: 22px;
     font-weight: normal;
@@ -462,7 +470,31 @@ img {
     font-size: 13px;
 }
 
-
 /* about fin */
+
+/* bloc debut */
+
+#bloc {
+
+}
+
+#bloc .card {
+    border-radius: 0 !important;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+#bloc .card .div-img-top {
+    max-height: 216px;
+    overflow: hidden !important;
+}
+#bloc .card .div-img-top img {
+    height: 100% !important;
+    width: 100%;
+    object-fit: cover !important;
+    border-radius: 0 !important;
+}
+
+/* bloc fin */
 
 /* =============== HOME fin ================== */
