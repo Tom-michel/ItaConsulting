@@ -296,9 +296,7 @@ img {
         bottom: 35%;
     }
 }
-@media screen and (max-width: 767px) {
-    
-}
+
 
 /* banière page d'accueil FIN */
 
@@ -309,6 +307,14 @@ img {
     position: relative;
     background-color: var(--color-dark);
 }
+
+@media screen and (max-width: 767px) {
+    #services {
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+}
+
 #services .boxes {
     z-index: 1;
     position: relative;
@@ -365,8 +371,6 @@ img {
     padding: 0.56rem 0.5rem;
 }
 
-.more:hover span{background-color: var(--color-yellow-dark); transition: 0.5s;}
-.more:hover i{background-color: var(--color-yellow); transition: 0.5s;}
 
 .box .img-card img{
     transition: 0.2s;
@@ -375,6 +379,9 @@ img {
     transform: scale(1.7);
     transition: 0.3s;
 }
+
+.box:hover .more span{background-color: var(--color-yellow-dark); transition: 0.5s;}
+.box:hover .more i{background-color: var(--color-yellow); transition: 0.5s;}
 
 /* services fin */
 
@@ -423,7 +430,7 @@ img {
     font-size: 2.5rem;
     color: var(--color-yellow-dark);
 }
-#realisations .items .item .follow {
+.follow {
     display: block;
     text-transform: uppercase;
     font-weight: 700;
@@ -433,8 +440,8 @@ img {
     display: inline-block;
 }
 
-#realisations .items .item .follow span {transition: 0.3s;}
-#realisations .items .item .follow:hover span {
+.follow span {transition: 0.3s;}
+.follow:hover span {
     padding-left: 0.5rem;
     transition: 0.3s;
 }
@@ -493,6 +500,14 @@ img {
     width: 100%;
     object-fit: cover !important;
     border-radius: 0 !important;
+}
+
+#bloc .card .card-title {
+    font-size: 1rem !important;
+    font-weight: 700;
+}
+#bloc .card .card-text {
+    font-size: 0.9rem !important;
 }
 
 /* bloc fin */
