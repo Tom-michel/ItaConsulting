@@ -53,6 +53,8 @@ img {
     --border-radius: 2rem;
 }
 
+
+
 /* =============== COULEURS fin ================== */
 
 /* =============== BOUTONS ======================= */
@@ -70,6 +72,9 @@ img {
 
 .bg-tm {
     background-color: var(--color-dark) !important;
+}
+.bg-ita {
+    background-color: var(--color-yellow-dark) !important;
 }
 
 .color-tm {
@@ -318,10 +323,11 @@ img {
 #services .boxes {
     z-index: 1;
     position: relative;
-    top: -150px;
+    top: -100px;
 }
+
 #services .btn-blog {
-    top: -60px;
+    top: -30px;
 }
 
 .boxes .box .card-title {
@@ -371,6 +377,10 @@ img {
     padding: 0.56rem 0.5rem;
 }
 
+
+#services .boxes .box .img-card {
+    /* opacity: 0.5; */
+}
 
 .box .img-card img{
     transition: 0.2s;

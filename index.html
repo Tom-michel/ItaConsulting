@@ -47,7 +47,7 @@
             >
               <i class="fas fa-bars"></i>
             </button>
-            <a class="navbar-brand" href="/index.html">ITTA Consulting</a>
+            <a class="navbar-brand" href="index.html">ITTA Consulting</a>
             <div class="collapse navbar-collapse" id="navbarTogglerITA">
               <ul class="navbar-nav position-relative ms-auto mb-2 mb-lg-0">
                 <div id="marker" class="rounded"></div>
@@ -89,7 +89,7 @@
 
         <div class="carousel-item h-100" data-mdb-interval="10000">
           <div class="bg-blur"></div>
-          <img src="img/train9.jpg" class="d-block w-100 h-100" alt="Image 4"/>
+          <img src="img/train5.0.png" class="d-block w-100 h-100" alt="Image 4"/>
           <div class="carousel-caption ban4">
             <h1 class="text-uppercase tm-text fw-bold">Itta Consulting</h1>
             <hr>
@@ -99,7 +99,7 @@
 
         <div class="carousel-item h-100" data-mdb-interval="10000">
           <div class="bg-blur"></div>
-          <img src="img/train5.0.png" class="d-block w-100 h-100" alt="Image 2"/>
+          <img src="img/project-mgt-1.jpg" class="d-block w-100 h-100" alt="Image 2"/>
           <div class="carousel-caption ban2">
             <h1 class="text-uppercase tm-text fw-bold">Itta Consulting</h1>
             <hr>
@@ -109,7 +109,7 @@
 
         <div class="carousel-item h-100" data-mdb-interval="10000">
           <div class="bg-blur"></div>
-          <img src="img/train8.0.png" class="d-block w-100 h-100" alt="Image 1"/>
+          <img src="img/project-mgt-2.jpg" class="d-block w-100 h-100" alt="Image 1"/>
           <div class="carousel-caption ban">
             <span>
               <h1 class="text-uppercase tm-text fw-bold">Itta Consulting</h1>
@@ -141,8 +141,8 @@
       <div class="container">
         <div class="row row-cols-1 row-cols-md-3 g-4 boxes">
           <div class="col box">
-            <div class="card h-100 rounded">
-              <div class="img-card rounded-top">
+            <div class="card h-100 rounded-0">
+              <div class="img-card rounded-0">
                 <img src="img/train5.0.png" class="card-img-top rounded-0" alt="Image"/>
                 <a class="more" href="#">
                   <span class="text-white text-uppercase fw-semibold">Lire plus</span><i class="fa-solid fa-angle-right text-white"></i>
@@ -161,14 +161,14 @@
           <div class="col box">
             <div class="card h-100 rounded-0">
               <div class="img-card">
-                <img src="img/rail1.jpg" class="card-img-top rounded-0" alt="Image"/>
+                <img src="img/project-mgt-2.jpg" class="card-img-top rounded-0" alt="Image"/>
                 <a class="more" href="#">
                   <span class="text-white text-uppercase fw-semibold">Lire plus</span><i class="fa-solid fa-angle-right text-white"></i>
                 </a>
               </div>
               <div class="card-body">
                 <hr class="mt-0 mb-2 soul">
-                <a href="" class="card-title tm-text text-uppercase">Les banques</a>
+                <a href="" class="card-title tm-text text-uppercase">Conduite de projet</a>
                 <p class="card-text">This is a short card.</p>
               </div>
             </div>
@@ -291,10 +291,11 @@
       </div>
     </section>
 
-    <!-- bloc -->
+
+    <!-- blog -->
     <div id="bloc" class="container py-5">
       <div class="text-center title pt-3 pb-5">
-        <h2 class="tm-text text-capitalize">Notr Blog</h2>
+        <h2 class="tm-text text-capitalize">Notre Blog</h2>
         <p class="text-uppercase">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
         <hr class="mt-2 ms-auto me-auto">
       </div>
@@ -313,7 +314,7 @@
             </div>
             <div class="card-footer border-0 border-bottom rounded-0 px-0 d-flex align-items-center justify-content-between">
               <small class="text-muted fst-italic">17 Dec. 2022, 1:30 PM</small>
-              <a class="follow mt-2" href="#">Lire plus <span><i class="fa-solid fa-arrow-right-long"></i></span> </a>
+              <a class="follow mt-2" href="#blog-detail" data-mdb-toggle="modal" data-mdb-target="#blogDetailModal">Lire plus <span><i class="fa-solid fa-arrow-right-long"></i></span> </a>
             </div>
           </div>
         </div>
@@ -328,7 +329,7 @@
             </div>
             <div class="card-footer border-0 border-bottom rounded-0 px-0 d-flex align-items-center justify-content-between">
               <small class="text-muted fst-italic">17 Dec. 2022, 1:30 PM</small>
-              <a class="follow mt-2" href="#">Lire plus <span><i class="fa-solid fa-arrow-right-long"></i></span> </a>
+              <a class="follow mt-2" href="#blog-detail" data-mdb-toggle="modal" data-mdb-target="#blogDetailModal">Lire plus <span><i class="fa-solid fa-arrow-right-long"></i></span> </a>
             </div>
           </div>
         </div>
@@ -347,12 +348,136 @@
             </div>
             <div class="card-footer border-0 border-bottom rounded-0 px-0 d-flex align-items-center justify-content-between">
               <small class="text-muted fst-italic">17 Dec. 2022, 1:30 PM</small>
-              <a class="follow mt-2" href="#">Lire plus <span><i class="fa-solid fa-arrow-right-long"></i></span> </a>
+              <a class="follow mt-2" href="#blog-detail" data-mdb-toggle="modal" data-mdb-target="#blogDetailModal">Lire plus <span><i class="fa-solid fa-arrow-right-long"></i></span> </a>
             </div>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- modal blog -->
+    <!-- <div class="modal fade show" id="blogDetailModal" data-mdb-backdrop="static" tabindex="-1" aria-labelledby="blogDetailModalLabel" style="display: block;" aria-modal="true" role="dialog"> -->
+    <div class="modal fade" id="blogDetailModal" data-mdb-backdrop="static" tabindex="-1" aria-labelledby="blogDetailModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content rounded-0">
+          <div class="modal-header rounded-0 bg-tm">
+            <h5 class="modal-title text-light" id="blogDetailModalLabel">Subject Title</h5>
+            <button type="button" class="text-light bg-tm border-0" data-mdb-dismiss="modal" aria-label="Close">
+              <i class="fs-4 fa-solid fa-xmark"></i>
+            </button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer rounded-0">
+            <style>
+              .btn-like {
+                background-color: var(--color-dark);
+                color: var(--color-yellow-dark);
+              }
+            </style>
+            <a class="btn-like rounded-pill border-1 px-2 mx-0" href="#like"><i class="fa-regular fa-thumbs-up"></i></a><small>like</small> |
+            <small><i class="fa-solid fa-heart text-danger"></i> 24</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- contact -->
+    <section id="contact" class="my-5">
+      <div class="text-center title pt-3 pb-5">
+        <h2 class="tm-text text-capitalize">Contactez nous</h2>
+        <p class="text-uppercase">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <hr class="mt-2 ms-auto me-auto">
+      </div>
+      <div class="container">
+        formulaire de contact bientot
+      </div>
+    </section>
+
+    <!-- footer -->
+
+    <section id="footer" class="pt-5 mt-5 bg-tm">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-lg-6 mb-4 order-0 order-sm-0">
+            <a class="text-decoration-none" href="index.html">
+              <!-- <img src="assets/img/footer-logo.png" height="51" alt="footer-logo" />  -->
+              <span style="font-size: 1.3rem;">ITTA CONSULTING</span> 
+            </a>
+            <p class="text-light my-4"> <i class="fas fa-map-marker-alt me-3"></i><span class="text-light">San Francisco, CA 94110</p>
+            <p class="text-light"> <i class="fas fa-envelope me-3"> </i><a class="text-light" href="mailto:vctung@outlook.com">vctung@outlook.com </a></p>
+            <p class="text-light"> <i class="fas fa-phone-alt me-3"></i><a class="text-light" href="tel:1-800-800-2299">1-800-800-2299 (Support)</a></p>
+            <!-- Section: Social media -->
+            <section class="">
+              <!-- Facebook -->
+              <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+
+              <!-- Twitter -->
+              <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                ><i class="fab fa-twitter"></i
+              ></a>
+
+              <!-- Instagram -->
+              <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                ><i class="fab fa-instagram"></i
+              ></a>
+
+              <!-- Linkedin -->
+              <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </section>
+            <!-- Section: Social media -->
+          </div>
+          <div class="col-6 col-sm-4 col-lg-2 mb-3 order-2 order-sm-1">
+            <h5 class="lh-lg fw-bold mb-4 text-light font-sans-serif">Community </h5>
+            <ul class="list-unstyled mb-md-4 mb-lg-0">
+              <li class="lh-lg"><a class="text-200" href="#!">Learners</a></li>
+              <li class="lh-lg"><a class="text-200" href="#!">Partners</a></li>
+              <li class="lh-lg"><a class="text-200" href="#!">Developers</a></li>
+              <li class="lh-lg"><a class="text-200" href="#!">Translators</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-sm-4 col-lg-2 mb-3 order-3 order-sm-2">
+            <h5 class="lh-lg fw-bold text-light mb-4 font-sans-serif">Informations</h5>
+            <ul class="list-unstyled mb-md-4 mb-lg-0">
+              <li class="lh-lg"><a class="text-200" href="#!">About</a></li>
+              <li class="lh-lg"><a class="text-200" href="#!">Pricing</a></li>
+              <li class="lh-lg"><a class="text-200" href="#!">Blog</a></li>
+              <li class="lh-lg"><a class="text-200" href="#!">Contact</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-sm-4 col-lg-2 mb-3 order-3 order-sm-2">
+            <h5 class="lh-lg fw-bold text-light mb-4 font-sans-serif"> More</h5>
+            <ul class="list-unstyled mb-md-4 mb-lg-0">
+              <li class="lh-lg"><a class="text-200" href="#!">Terms</a></li>
+              <li class="lh-lg"><a class="text-200" href="#!">Help</a></li>
+              <li class="lh-lg"><a class="text-200" href="#!">Contact</a></li>
+              <li class="lh-lg"><a class="text-200" href="#!">Articles</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-0 bg-tm">
+      <div class="container" style="background-color: var(--color-yellow-dark);">
+        <div class="row justify-content-md-between justify-content-evenly py-4">
+          <div class="col-12 col-sm-8 col-md-6 col-lg-auto text-center text-md-start">
+            <p class="fs--1 my-2 fw-bold">All rights Reserved &copy; Itta Consulting, 2023</p>
+          </div>
+          <div class="col-12 col-sm-8 col-md-6">
+            <p class="fs--1 my-2 text-center text-md-end"> Made with&nbsp;
+              <svg class="bi bi-suit-heart-fill" xmlns="http://www.w3.org/2000/svg" width="12" height="12" fill="#EB6453" viewBox="0 0 16 16">
+                <path d="M4 1c2.21 0 4 1.755 4 3.92C8 2.755 9.79 1 12 1s4 1.755 4 3.92c0 3.263-3.234 4.414-7.608 9.608a.513.513 0 0 1-.784 0C3.234 9.334 0 8.183 0 4.92 0 2.755 1.79 1 4 1z"></path>
+              </svg>&nbsp;by&nbsp;<a class="fw-bold text-900" href="https://ubora-studios.com/" target="_blank">Ubora Studios </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
     
 
 
