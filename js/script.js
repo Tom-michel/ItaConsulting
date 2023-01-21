@@ -33,7 +33,7 @@ items.forEach(link => {
         removeActiveClass();
         link.querySelector(".nav-link").classList.add("active");
     });
-    link.onmouseover = function(e) {
-        indicator(e.target);
-    };
+    // link.onmouseover = function(e) {
+    //     indicator(e.target);
+    // };
 });

@@ -31,7 +31,7 @@ body {
 img {
     object-fit: cover !important;
     height: 100% !important;
-    width: 100%;
+    /* width: 100%; */
 }
 
 /* =================== INITIALISATION début ===================== */
@@ -117,10 +117,49 @@ img {
 }
 
 #div-nav nav .navbar-brand {
-    font-family: 'Raleway', 'Open Sans', Arial, sans-serif;
-    font-weight: 700;
-    text-transform: uppercase;
+    position: relative;
+    width: 100px;
 }
+
+#div-nav nav .navbar-brand img {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    height: 100px !important;
+    left: 0 !important;
+    bottom: -33px !important;
+}
+#div-nav.scroll nav .navbar-brand img {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    height: 80px !important;
+    left: 0 !important;
+    bottom: -22px !important;
+}
+
+@media screen and (max-width: 767px) {
+    #div-nav nav .navbar-brand {
+        overflow: hidden !important;
+    }
+    #div-nav nav .navbar-brand img {
+        position: absolute;
+        z-index: 99;
+        width: 100%;
+        height: 78px !important;
+        left: 30% !important;
+        bottom: -20px !important;
+    }
+    #div-nav.scroll nav .navbar-brand img {
+        position: absolute;
+        z-index: 99;
+        width: 100%;
+        height: 78px !important;
+        left: 25% !important;
+        bottom: -20px !important;
+    }
+}
+
 #div-nav nav .nav-item .nav-link {
     font-family: 'Raleway', 'Open Sans', Arial, sans-serif;
     font-size: 13px;
@@ -136,7 +175,7 @@ img {
     left: 0;
     width: 16.5%;
     background-color: var(--color-yellow);
-    bottom: -20px;
+    bottom: -19.5px;
     transition: 0.5s;
 }
 #div-nav.scroll nav #marker {
@@ -263,6 +302,7 @@ img {
     animation-name: top_down;
     animation-delay: 0.5s;
     animation-duration: 1s;
+    font-size: 1.5rem;
 }
 
 
@@ -521,5 +561,21 @@ img {
 }
 
 /* bloc fin */
+
+
+/* footer debut  */
+
+#footer .footer-img {
+    display: block;
+    position: relative;
+    width: 200px;
+    height: 100px;
+    overflow: hidden !important;
+}
+#footer .footer-img {
+
+}
+
+/* footer fin */
 
 /* =============== HOME fin ================== */
